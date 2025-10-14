@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Short keyword rich narrative of the site purpose"
-    />
-    <meta name="author" content="Shakera Couch" />
+    <meta name="description" content="Short keyword rich narrative of the site purpose"/>
+    <meta name="author" content="Shakera Couch"/>
+    <style>
+      input, textarea, label{display:block}
+    </style>
     <title>HTML Cheatsheet</title>
   </head>
   <body>
@@ -52,11 +52,44 @@
     <section id="hyperlinks">
       <h2>Hyperlinks</h2>
       <ul>
-        <li><a href="about.html">Relative Link</a></li>
+        <li><a href="about.html" title="This is the title attribute">Relative Link</a></li>
         <li><a href="https://ualr.edu">Absoulte Link</a></li>
         <li><a href="#headings">Anchor Link</a></li>
         <li><a href="mailto:mail@ualr.edu">Email Link</a></li>
       </ul>
+    </section>
+    <section id="table">
+        <h2>Table</h2>
+        <table border="1">
+        <caption>Sample Table</caption>
+            <tr><th>Item</th><th>Quantity</th><th>Cost</th></tr>
+            <tr><td>Food</td><td>10</td><td>.99</td></tr>
+        </table>
+    <section id="images">
+      <h2>Images</h2>
+      <img src="assets/img/Spongebob.webp" alt="Spongebob" />
+    </section>
+    
+  
+
+    </section>
+    <section id="forms">
+      <form action="processing-script.php" method="post">
+        <fieldset>
+          <legend>Personal Info</legend>
+          <label for="cust-name">Customer Name:</label><input type="text" id="cust-name" name="cust-name"/>
+          <label for="address">Address:</label>
+          <textarea id="address" name="address"></textarea>
+          <label for="fav-color">Favorite Color</label>
+          <select id="fav-color" name="fav-color">
+            <option>Blue</option>
+            <option>Pink</option>
+            <option>Orange</option>
+            <option selected>---</option>
+          </select>
+          <input type="submit"/>
+        </fieldset> 
+      </form>
     </section>
   </body>
 </html>
