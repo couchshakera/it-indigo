@@ -1,0 +1,135 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*--Responsive Image--*/
+img{
+    max-width:100%;
+    
+}
+
+/--*Utility Classes--*/
+
+.container{
+    margin:auto
+    padding:40px
+
+}
+
+
+body{
+    background-color:#f49cbb;
+    font-family: "Oswald", sans-serif;
+}
+main{
+  background-color:#ffffff;
+  width:80vw;
+  text-align:center;
+  margin-top: 40px;
+  margin-right: auto;
+  margin-bottom: 40px;
+  margin-left: auto; 
+  /*Shorthand */
+  margin: 40px auto;
+  margin: 40px auto 40px auto;
+  border: 2px dashed #dd2d4a;
+  border-radius: 5px;
+}
+header.primary{
+background-color:#f26a8d;
+padding:20px; 
+background-image:url(../img/banner.jpg);
+background-repeat:no-repeat;  
+background-size:cover;
+background-position:center;
+border:3px solid #7c6a0a; 
+display:flex;
+justify-content:space-between;
+}
+
+div.hgroup{
+    width:70%;
+    text-align:left;
+}
+header.primary nav{
+    width:30%;
+}
+div.hgroup h1{
+    color: #ffffff;
+    text-decoration:none;
+    font-size:1rem;
+    text-shadow; 2px 2px 4px #000000;
+}
+div.hgroup h2{
+    color:#ea3788;
+    font-size:0.8rem;
+    text-shadow: 2px 2px 4px #000000;
+}
+.hgroup h1, .hgroup h2{
+    margin:0;
+} 
+  line-height: 1.6;
+}
+#content h2, #content h3, .widget header h2{
+  color:greenyellow
+  boarder-left; 7.5px solid greenyellow;
+  boarder-right; 15px 0;
+  padding: 5px 7.5px 5px 0;
+}
+
+#blog{
+  background-color:#cbeef3;
+  padding:20px;
+  boarder-top;3px double #7c6a0a;
+}
+
+#blog > h2{
+  color:#000000
+  text-shadow: 1px 1px 2px #ffffff;
+  margin-left:20px
+}
+
+#blog.post{
+  display:grid;
+  grid-template-columns:1fr 3fr;
+  grid-template-areas:
+    "figure header"
+    "figure post-content"
+    "figure footer";
+     margin:20px;
+    padding:20px;
+    background:#ffffff;
+}
+
+.post figure{
+  grid-area: figure;
+  margin:0 20px 0 0;
+
+}
+.post header{
+  grid-area: header;
+
+}
+.post .post-content{
+  grid-area: post-content;
+
+}
+.post .post-meta{
+  grid-area: post-meta;
+}
+aside .container{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap: 40px;
+}
+ #colophon{
+  background-image:url(../img/banner.jpg);
+  background-repeat:no-repeat;  
+  background-size:cover;
+  padding: 1px;
+  text-align: center;
+  color:#ffffff;
+ }
