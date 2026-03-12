@@ -1,0 +1,107 @@
+html{
+    box-sizing: border-box;
+}
+*,*:before, *:after {
+    box-sizing: inherit;
+}
+body {
+  background-image: url('/microsite-project/assets/img/pinnacle-mountain-state.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+<style>
+    body {
+      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/microsite-project/assets/img/pinnacle-mountain-state.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    nav a {
+      margin: 0 10px;
+      color: white;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .page { display: none; }
+    .page.active { display: block; }
+
+    .slick-autoplay-toggle-button,
+.slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
+.slick-dots li button .slick-dot-icon,
+.slick-dots li.slick-active button .slick-dot-icon {
+  color: white;
+}
+
+/* Customize Previous/Next/Dots/Autoplay - Active State */
+
+.slick-next:focus .slick-next-icon,
+.slick-next:focus .slick-prev-icon,
+.slick-prev:focus .slick-next-icon,
+.slick-prev:focus .slick-prev-icon,
+.slick-dots li button:focus .slick-dot-icon:before,
+.slick-dots li.slick-active button:focus .slick-dot-icon,
+.slick-autoplay-toggle-button:focus 
+{
+    color:black;
+}
+
+/* Survey Container */
+#wufoo-q1c31xld0et3p5v {
+  background-color: rgba(42, 74, 35, 0.75);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 30px;
+  max-width: 700px;
+  margin: 20px auto;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Survey Heading */
+#media h2 {
+  color: #c8e6c0;
+  text-shadow: 1px 2px 6px rgba(0, 0, 0, 0.6);
+  letter-spacing: 1px;
+}
+
+/* Survey Subtext */
+#media p {
+  color: #d4edda;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Wufoo link styling */
+#wufoo-q1c31xld0et3p5v a {
+  color: #a8d5a2;
+  text-decoration: underline;
+}
+
+#wufoo-q1c31xld0et3p5v a:hover {
+  color: #ffffff;
+}
+
+.carousel {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.carousel img {
+  width: 100%;
+  border-radius: 12px;
+  padding: 0 10px;
+}
+
+.slick-prev, .slick-next {
+  z-index: 10;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #a8d5a2;
+  font-size: 30px;
+}

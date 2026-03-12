@@ -1,104 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>Microsite Project</title>
   <meta charset="UTF-8" />
-  <meta name="description" content="Keyword rich narrative on site purpose" />
-  <meta name="author" content="Shakera Couch" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Share+Tech&display=swap" rel="stylesheet"> <!-- Add your own Font -->
-  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pinnacle Mountain State Park</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@accessible360/accessible-slick@1.0.1/slick/slick-theme.min.css">
+    <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/microsite-project/assets/img/pinnacle-mountain-state.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      min-height: 100vh;
+      color: white;
+      font-family: 'Lato', sans-serif;
+    }
+
+    nav {
+      background-color: rgba(0,0,0,0.6);
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      cursor: pointer;
+      text-decoration: none;
+      font-size: 18px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 48px;
+      font-family: 'Playfair Display', serif;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      list-style: none;
+      font-size: 18px;
+      line-height: 2;
+    }
+
+    .media-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .media-grid img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .video-container {
+      margin-top: 20px;
+    }
+
+    .video-container iframe {
+      width: 100%;
+      max-width: 800px;
+      height: 450px;
+      border-radius: 8px;
+    }
+
+    .page { display: none; }
+    .page.active { display: block; }
+  </style>
 </head>
-
 <body>
-  <header role="banner" class="primary">
-    <h1><a href="index.html">Pinnacle Mountain State Park</a></h1>
-    <h2>Site Tagline</h2>
-    <nav role="navigation">
-      <ul>
-        <li><a href="#">Page</a></li>
-        <li><a href="#">Page</a></li>
-        <li><a href="#">Page</a></li>
-      </ul>
-    </nav>
-  </header>
-  <section id="content" class="container">
-    <h2>Quick Park Facts</h2>
-      <ul> 
-        <li>Founded: 1973.</li>
-        <li>Pinnacle Mountain Summit Elevation: 1,011 ft above sea level.</li>
-        <li>Park Size: 2,351 acres of diverse habitats including wetlands and upland ridges.</li>
-        <li>Trail System: Over 33 miles of trails, including part of the 222-mile Ouachita National Recreation Trail.</li>
-        <lil>Cultural Significance: Designated a Trail of Tears National Historic Trail, this area witnessed the forced relocation of Cherokee, Choctaw, Creek, Seminole, and Chickasaw peoples.</lil>
-      </ul>
-    <h3>Outdoor Activities</h3>
-    <p>Integer pretium fringilla mauris, sed cursus purus consectetur eu. Donec vitae placerat enim. Nam dictum purus nec diam pharetra, in accumsan ipsum commodo. In varius ligula posuere, sodales erat nec, tempus purus. Quisque eu posuere arcu, ut pellentesque</p>
-    <p>Integer pretium fringilla mauris, sed cursus purus consectetur eu. Donec vitae placerat enim. Nam dictum purus nec diam pharetra, in accumsan ipsum commodo. In varius ligula posuere, sodales erat nec, tempus purus. Quisque eu posuere arcu, ut pellentesque</p>
-    <p>Integer pretium fringilla mauris, sed cursus purus consectetur eu. Donec vitae placerat enim. Nam dictum purus nec diam pharetra, in accumsan ipsum commodo. In varius ligula posuere, sodales erat nec, tempus purus. Quisque eu posuere arcu, ut pellentesque</p>
-  </section>
-  <section id="articles" class="container">
-    <article class="post">
-      <header>
-        <figure>
-          <img src="https://placehold.co/300x200" alt="Placeholder" />
-          <figcaption>Image Caption</figcaption>
-        </figure>
-        <h2> <a href="#" rel="bookmark" title="link to this post">Article Title</a> </h2>
-      </header>
-      <p>Curabitur facilisis pharetra ultrices. Phasellus eu elementum felis. Etiam cursus mi vitae odio imperdiet, vel fringilla orci porttitor. Cras at tincidunt metus, in lobortis ligula. Fusce metus nisl, efficitur id fringilla quis, luctus non nisi.
-      </p>
-      <footer class="post-meta"> Posted by <a href="#">Post Author</a></footer>
-    </article>
-    <article class="post">
-      <header>
-        <figure>
-          <img src="https://placehold.co/300x200" alt="Placeholder&nbsp;" />
-          <figcaption>Image Caption</figcaption>
-        </figure>
-        <h2> <a href="#" rel="bookmark" title="link to this post">Article Title</a> </h2>
-      </header>
-      <p>Curabitur facilisis pharetra ultrices. Phasellus eu elementum felis. Etiam cursus mi vitae odio imperdiet, vel fringilla orci porttitor. Cras at tincidunt metus, in lobortis ligula. Fusce metus nisl, efficitur id fringilla quis, luctus non nisi.
-      </p>
-      <footer class="post-meta"> Posted by <a href="#">Post Author</a></footer>
-    </article>
-    <article class="post">
-      <header>
-        <figure>
-          <img src="https://placehold.co/300x200" alt="Placeholder" />
-          <figcaption>Image Caption</figcaption>
-        </figure>
-        <h2> <a href="#" rel="bookmark" title="link to this post">Article Title</a> </h2>
-      </header>
-      <p>Curabitur facilisis pharetra ultrices. Phasellus eu elementum felis. Etiam cursus mi vitae odio imperdiet, vel fringilla orci porttitor. Cras at tincidunt metus, in lobortis ligula. Fusce metus nisl, efficitur id fringilla quis, luctus non nisi.
-      </p>
-      <footer class="post-meta"> Posted by <a href="#">Post Author</a></footer>
-    </article>
-  </section>
-  <aside role="complementary">
-    <div class="container">
-      <article class="widget">
-        <header>
-          <h2>Sample Sidebar Item </h2>
-        </header>
-        <p>Quisque justo erat, varius placerat fermentum vel, iaculis vel ligula. Phasellus et elit purus. Curabitur ipsum enim, scelerisque vitae condimentum ac, cursus eget quam. Nullam volutpat dui ut risus pulvinar at fringilla sem tristique. Nulla facilisi.
-          Donec posuere euismod purus, eu scelerisque risus pellentesque eu. Vestibulum sed tincidunt metus. <a href="#">Read More &raquo;</a></p>
-        <footer>Widget Footer</footer>
-      </article>
-      <article class="widget">
-        <header>
-          <h2>Sample Sidebar Item </h2>
-        </header>
-        <p>Quisque justo erat, varius placerat fermentum vel, iaculis vel ligula. Phasellus et elit purus. Curabitur ipsum enim, scelerisque vitae condimentum ac, cursus eget quam. Nullam volutpat dui ut risus pulvinar at fringilla sem tristique. Nulla facilisi.
-          Donec posuere euismod purus, eu scelerisque risus pellentesque eu. Vestibulum sed tincidunt metus. <a href="#">Read More &raquo;</a></p>
-        <footer>Widget Footer</footer>
-      </article>
-    </div>
-  </aside>
-  <footer id="colophon" role="contentinfo">
-    <h6>&copy; 2024 Student Name</h6>
-  </footer>
-</body>
 
+  <nav>
+    <a onclick="showPage('home')">Home</a>
+    <a onclick="showPage('things-to-do')">Things To Do</a>
+    <a onclick="showPage('media')">Media</a>
+    <a onclick="showPage('park-video')">Park Video</a>
+  </nav>
+
+  <!-- Home -->
+  <div id="home" class="page active">
+    <main>
+      <h1>Pinnacle Mountain State Park</h1>
+      <p>Just west of Arkansas's capital city of Little Rock, Pinnacle Mountain stands as the centerpiece of this geographically diverse state park. This day-use park offers a variety of outdoor adventures on the Big and Little Maumelle Rivers, in the Arkansas Arboretum, and along over 33 miles of trails including over 19 miles of challenging mountain bike trails. Hike to the top, explore the rivers or take in one of the many interpretive programs offered by park staff. Visit the park visitor center, enjoy a picnic, or reserve a pavilion for a larger gathering. Pinnacle Mountain State Park is also certified as a Trails of Tears National Historic Site. The mountain witnessed the hardships faced by the removal parties of the Cherokees, as well as, Choctaws, Creeks, Seminoles, and Chickasaws</p>
+    </main>
+  </div>
+
+  <!-- Things To Do -->
+  <div id="things-to-do" class="page">
+    <main>
+      <h1>Things To Do</h1>
+      <ul>
+        <li>Fishing</li>
+          <p>Pinnacle Mountain State Park has great fishing opportunities on both the Little Maumelle River and the park's stocked pond. Anglers can expect to catch catfish, crappie, bream, and bass. Fishing is limited to rod or pole only, and the daily catfish limit is three. The Little Maumelle River Water Trail is home to largemouth and spotted bass, along with crappie and bream. Light line, jigs, spinners, and minnows are commonly used here. For catfish, head to Pinnacle Mountain Pond and try fishing with worms, minnows, or stink bait.</p>
+        <li>Hiking Trail</li>
+          <p>Pinnacle Mountain features more than 33 miles of trails, including dedicated paths for hiking, mountain biking, and interpretive walks. The two most popular routes, West Summit Trail and East Summit Trail, lead to the top of Pinnacle Mountain, where hikers are rewarded with views of Lake Maumelle, the Arkansas River Valley, and the Ouachita Mountains. For an accessible experience, the Arkansas Trail provides a paved loop through the Arkansas Arboretum, complete with benches and interpretive audio signs. Other easy trails explore forested floodplains and upland woods. More advanced routes take hikers up rocky hillsides and through boulder fields. The park also includes a section of the Ouachita National Hiking Trail, a 222-mile route that begins at the visitor center and continues west into Oklahoma.</p>
+        <li>Rock Climbing</li>
+          <p>Put your climbing skills to the test on natural sandstone routes. The southeast face of Pinnacle Mountain features broken blocks of Ouachita sandstone, with climbing areas organized by level along the East Summit Trail (IA, IB, II, III, and IV). Due to loose rock, climbers should wear a helmet and check in at the visitor center before attempting any technical climbs.</p>
+      </ul>
+    </main>
+  </div>
+
+  <!-- Media -->
+  <div id="media" class="page">
+    <main>
+      <h1>Media</h1>
+      <div class="carousel">
+  <div><img src="/microsite-project/assets/img/kayaking.jpg" alt="Kayaking at the park" /></div>
+  <div><img src="/microsite-project/assets/img/pms2.jpg" alt="Park photo 2" /></div>
+  <div><img src="/microsite-project/assets/img/pinn.jpg" alt="Pinnacle Mountain" /></div>
+</div>
+    
+    <h2 style="margin-top: 50px; font-family: 'Playfair Display', serif; font-size: 36px;">Visitor Survey</h2>
+    <p>We'd love to hear about your experience!</p>
+    <div id="wufoo-q1c31xld0et3p5v"> Fill out my <a href="https://sdcouch.wufoo.com/forms/q1c31xld0et3p5v">online form</a>. </div>
+    <script type="text/javascript"> var q1c31xld0et3p5v; (function(d, t) { var s = d.createElement(t), options = { 'userName':'sdcouch', 'formHash':'q1c31xld0et3p5v', 'autoResize':true, 'height':'519', 'async':true, 'host':'wufoo.com', 'header':'show', 'ssl':true }; s.src = ('https:' == d.location.protocol ?'https://':'http://') + 'secure.wufoo.com/scripts/embed/form.js'; s.onload = s.onreadystatechange = function() { var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return; try { q1c31xld0et3p5v = new WufooForm(); q1c31xld0et3p5v.initialize(options); q1c31xld0et3p5v.display(); } catch (e) { } }; var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr); })(document, 'script'); </script>
+
+  </div>
+
+  <!-- Park Video -->
+<div id="park-video" class="page">
+  <main>
+    <h1>Park Video</h1>
+    <p>Check out this video about the park!</p>
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/ZDqeyyf5xd8" 
+        title="Park Video"
+        frameborder="0" 
+        allowfullscreen>
+      </iframe>
+    </div>
+  </main>
+</div>
+  <script>
+    function showPage(pageId) {
+      document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+      document.getElementById(pageId).classList.add('active');
+    }
+  </script>
+
+</body>
 </html>
