@@ -1,44 +1,94 @@
-html{
-    box-sizing: border-box;
+html {
+  box-sizing: border-box;
 }
-*,*:before, *:after {
-    box-sizing: inherit;
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
+
 body {
-  background-image: url('/microsite-project/assets/img/pinnacle-mountain-state.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/microsite-project/assets/img/pinnacle-mountain-state.jpg');
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   min-height: 100vh;
+  color: white;
+  font-family: 'Lato', sans-serif;
 }
-<style>
-    body {
-      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('/microsite-project/assets/img/pinnacle-mountain-state.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      min-height: 100vh;
-      color: white;
-      font-family: Arial, sans-serif;
-    }
 
-    nav a {
-      margin: 0 10px;
-      color: white;
-      cursor: pointer;
-      text-decoration: none;
-    }
+nav {
+  background-color: rgba(0,0,0,0.6);
+  padding: 15px;
+  text-align: center;
+}
 
-    .page { display: none; }
-    .page.active { display: block; }
+nav a {
+  margin: 0 15px;
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 18px;
+}
 
-    .slick-autoplay-toggle-button,
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  font-size: 18px;
+  line-height: 2;
+}
+
+.page { display: none; }
+.page.active { display: block; }
+
+/* Carousel */
+.carousel {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.carousel img {
+  width: 100%;
+  border-radius: 12px;
+  padding: 0 10px;
+}
+
+.slick-prev, .slick-next {
+  z-index: 10;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #a8d5a2;
+  font-size: 30px;
+}
+
+.slick-autoplay-toggle-button,
 .slick-prev .slick-prev-icon, .slick-next .slick-next-icon,
 .slick-dots li button .slick-dot-icon,
 .slick-dots li.slick-active button .slick-dot-icon {
   color: white;
 }
-
-/* Customize Previous/Next/Dots/Autoplay - Active State */
 
 .slick-next:focus .slick-next-icon,
 .slick-next:focus .slick-prev-icon,
@@ -46,9 +96,8 @@ body {
 .slick-prev:focus .slick-prev-icon,
 .slick-dots li button:focus .slick-dot-icon:before,
 .slick-dots li.slick-active button:focus .slick-dot-icon,
-.slick-autoplay-toggle-button:focus 
-{
-    color:black;
+.slick-autoplay-toggle-button:focus {
+  color: black;
 }
 
 /* Survey Container */
@@ -86,22 +135,14 @@ body {
   color: #ffffff;
 }
 
-.carousel {
-  max-width: 800px;
-  margin: 20px auto;
+/* Video */
+.video-container {
+  margin-top: 20px;
 }
 
-.carousel img {
+.video-container iframe {
   width: 100%;
-  border-radius: 12px;
-  padding: 0 10px;
-}
-
-.slick-prev, .slick-next {
-  z-index: 10;
-}
-
-.slick-prev:before, .slick-next:before {
-  color: #a8d5a2;
-  font-size: 30px;
+  max-width: 800px;
+  height: 450px;
+  border-radius: 8px;
 }
